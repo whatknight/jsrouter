@@ -44,7 +44,7 @@
     "babel-preset-stage-0": "6.5.0",
     "babel-register": "^6.26.0",
     "babel-runtime": "6.6.1",
-    "bs-platform": "^1.9.3",
+    "bs-platform": "^2.0.0",
     "chai": "3.3.0",
     "eslint": "1.5.1",
     "eslint-config-airbnb": "0.0.9",
