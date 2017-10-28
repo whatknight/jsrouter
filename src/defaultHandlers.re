@@ -1,11 +1,7 @@
-type router = Js.t {. navigate: string => unit}; 
-external navigate: string => unit = "this.navigate" [@@bs.val];
+type router = {. navigate: string => unit};
 
-let defaultUnrecognizedRouteHandler lastPath path => {
-  navigate "/";
-};
+[@bs.val] external navigate : string => unit = "this.navigate";
 
-let defaultNavigateState () => {
-  Js.Obj.empty ();
-};
-  
+let defaultUnrecognizedRouteHandler = (_, _) => navigate("/");
+
+let defaultNavigateState = () => Js.Obj.empty();

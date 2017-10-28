@@ -26,7 +26,7 @@ function trimQueryParams(path) {
   return path.split('?')[0];
 }
 
-function sanitizePaths(paths, queryParams) {
+function sanitizePaths(paths) {
   const sanitizedPaths = {};
   Object.keys(paths).forEach(key => {
     sanitizedPaths[key] = trimQueryParams(paths[key]);
